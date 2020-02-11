@@ -61,15 +61,193 @@
                 </ul>
             </div>
             <div class="col-sm-9 col-md-10 main">
-                <h1 class="page-header pull-left"><i class="fa fa-line-chart" aria-hidden="true"></i> Analytics</h1>
+                <h1 class="page-header pull-left"><i class="fa fa-file-text" aria-hidden="true"></i> Scheduling</h1>
                 <img class="pull-right" style="width: 120px; height: 120px;" src="{% static 'intelli_freight/images/Screenshot 2020-02-11 at 4.01.38 PM.png' %}" alt="">
-                <img src="{% static 'intelli_freight/images/MicrosoftTeams-image.png' %}"style="width: 800px; height: 500px; margin-left: 200px; margin-top: 60px; margin-bottom: 60px;" class="card-img-top" alt="...">
-                <hr class="divider">
-                <img src="{% static 'intelli_freight/images/MicrosoftTeams-image (1).png' %}"style="width: 800px; height: 500px; margin-left: 200px; margin-top: 100px;" class="card-img-top" alt="...">
-                <br>
-                <br>
-            </div>
+                <div class="row placeholders">
+                    <div class="col-xs-12 col-sm-12 placeholder">
+{#                       <h2 style="text-align: center; font-size: 2.5em;">Scheduling</h2>#}
+                        <br>
+                        <br>
+                        <div class="col-xs-6 col-sm-6 col-lg-6 placeholder pull-left" class="card" style="width: 20em; margin-left:10px;">
+                          <div class="table-responsive" style="width: 500px; height: 700px;">
+                              <h2>In Progress</h2>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th style="text-align: center;">ID#</th>
+                                <th style="text-align: center;">Shipname</th>
+                                <th style="text-align: center;">E.T.D </th>
+                                <th style="text-align: center;">Dock</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>833</td>
+                                <td>Helios 999</td>
+                                <td>4 hours</td>
+                                <td>21</td>
+                            </tr>
+                            <tr>
+                                <td>342</td>
+                                <td>Voyager 35</td>
+                                <td>2 hours</td>
+                                <td>6</td>
+
+                            </tr>
+                            <tr>
+                                <td>832</td>
+                                <td>Cruiser 747</td>
+                                <td>30 minutes</td>
+                                <td>1</td>
+
+                            </tr>
+                            <tr>
+                                <td>2341</td>
+                                <td>Mariner 989 </td>
+                                <td>5 hours 10 minutes</td>
+                                <td>5</td>
+
+                            </tr>
+                            <tr>
+                                <td>833</td>
+                                <td>Helios 999</td>
+                                <td>4 hours</td>
+                                <td>21</td>
+                            </tr>
+                            <tr>
+                                <td>273</td>
+                                <td>Titanic</td>
+                                <td>8 hours</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <td>342</td>
+                                <td>Voyager 35</td>
+                                <td>2 hours</td>
+                                <td>13</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-lg-6 placeholder pull-right" class="card" style="width: 20em; margin-right: 300px;">
+                          <div class="table-responsive" style="width: 600px; height: 700px;">
+                              <h2>Queued</h2>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th style="text-align: center;">ID#</th>
+                                <th style="text-align: center;">Shipname</th>
+                                <th style="text-align: center;">Urgency</th>
+                                <th style="text-align: center;">Dock</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>343</td>
+                                <td>Cruiser 888</td>
+                                <td>Urgent</td>
+                                <td><div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Assign Dock
+  </a>
+
+  <div style="text-align: center;" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#">1</a><br>
+    <a class="dropdown-item" href="#">5</a><br>
+    <a class="dropdown-item" href="#">6</a><br>
+      <a class="dropdown-item" href="#">12</a><br>
+    <a class="dropdown-item" href="#">8</a><br>
+    <a class="dropdown-item" href="#">9</a><br>
+  </div>
+</div></td>
+                            </tr>
+                            <tr>
+                                <td>634</td>
+                                <td>Cruiser 747</td>
+                                <td>Low</td>
+                                 <td><div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Assign Dock
+  </a>
+
+  <div style="text-align: center;" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#">1</a><br>
+    <a class="dropdown-item" href="#">5</a><br>
+    <a class="dropdown-item" href="#">6</a><br>
+      <a class="dropdown-item" href="#">12</a><br>
+    <a class="dropdown-item" href="#">8</a><br>
+    <a class="dropdown-item" href="#">9</a><br>
+  </div>
+</div></td>
+                            </tr>
+                            <tr>
+                                <td>242</td>
+                                <td>Voyager 777 </td>
+                                <td>Medium</td>
+                                 <td><div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Assign Dock
+  </a>
+
+  <div style="text-align: center;" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#">1</a><br>
+    <a class="dropdown-item" href="#">5</a><br>
+    <a class="dropdown-item" href="#">6</a><br>
+      <a class="dropdown-item" href="#">12</a><br>
+    <a class="dropdown-item" href="#">8</a><br>
+    <a class="dropdown-item" href="#">9</a><br>
+  </div>
+</div></td>
+                            </tr>
+                            <tr>
+                                <td>383</td>
+                                <td>Helios 999</td>
+                                <td>Medium</td>
+                                 <td><div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Assign Dock
+  </a>
+
+  <div style="text-align: center;" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#">1</a><br>
+    <a class="dropdown-item" href="#">5</a><br>
+    <a class="dropdown-item" href="#">6</a><br>
+      <a class="dropdown-item" href="#">12</a><br>
+    <a class="dropdown-item" href="#">8</a><br>
+    <a class="dropdown-item" href="#">9</a><br>
+  </div>
+</div></td>
+                            </tr>
+                            <tr>
+                                <td>773</td>
+                                <td>Helios 912</td>
+                                <td>Urgent</td>
+                                 <td><div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Assign Dock
+  </a>
+
+  <div style="text-align: center;" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#">1</a><br>
+    <a class="dropdown-item" href="#">5</a><br>
+    <a class="dropdown-item" href="#">6</a><br>
+      <a class="dropdown-item" href="#">12</a><br>
+    <a class="dropdown-item" href="#">8</a><br>
+    <a class="dropdown-item" href="#">9</a><br>
+  </div>
+</div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                        </div>
+                    </div>
+                </div>
         </div>
+
     </div>
 
     <footer>

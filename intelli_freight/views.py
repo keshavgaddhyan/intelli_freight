@@ -6,3 +6,6 @@ def index(request):
 
 def report(request):
     return render(request, 'intelli_freight/report.html' , {'report': report})
+
+def vessel(request):
+    return render(request, 'intelli_freight/vessel.html' , {'vessel': vessel})
