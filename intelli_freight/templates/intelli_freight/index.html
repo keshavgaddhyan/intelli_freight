@@ -54,24 +54,20 @@
                 <ul class="nav nav-sidebar">
                     <li class="active"><a href="#">Vessel Arrangement</a></li>
                     <li><a href="#">Truck Parking Arrangement</a></li>
-                    <li><a href="#">Daily Report</a></li>
+                    <li><a href="{% url 'report' %}">Daily Report</a></li>
                     <li><a href="#">Positioning of Containers</a></li>
                     <li><a href="#">Bad Weather Arrangements</a></li>
                     <li><a href="#">Accounts</a></li>
 
-{#                </ul>#}
-{#                <ul class="nav nav-sidebar">#}
-{#                    <li class="active"><a href="#">Reports</a></li>#}
-{#                    <li><a href="#">Revenue</a></li>#}
-{#                    <li><a href="#">Countries</a></li>#}
-{#                    <li><a href="#">Spammers</a></li>#}
-{#                </ul>#}
             </div>
             <div class="col-sm-9 col-md-10 main">
-                <h1 class="page-header"><i class="fa fa-tachometer" aria-hidden="true"></i> Today</h1>
+                <h1 class="page-header pull-left"><i class="fa fa-tachometer" aria-hidden="true"></i> Today</h1>
+                <img class="pull-right" style="width: 120px; height: 120px;" src="{% static 'intelli_freight/images/Screenshot 2020-02-11 at 4.01.38 PM.png' %}" alt="">
                 <div class="row placeholders">
                     <div class="col-xs-12 col-sm-12 placeholder">
                        <h2 style="text-align: center; font-size: 2.5em;">Arriving ships</h2>
+                        <br>
+                        <br>
                         <div class="col-xs-3 col-sm-3 placeholder"class="card" style="width: 20em;">
                           <img src="{% static 'intelli_freight/images/5a2993aba3b47486088b4667.jpeg' %}"  style="width: 200px; height: 150px;" class="card-img-top" alt="...">
                           <div class="card-body">
@@ -186,9 +182,10 @@
             </div>
         </div>
     </div>
-    
-    <footer>
+
+        <footer>
         <p class="pull-right"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Move to Top</p>
+        <p>&copy; Intelli Freight, 2020</p>
     </footer>
     
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

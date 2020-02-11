@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+
+	{% load static %}
+    <title>Intelli Freight</title>
+	<link rel="stylesheet" href="{% static 'intelli_freight/adminstyle.css' %}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<!--    Navbar starts here-->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Intelli Freight</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard <span class="sr-only">(current)</span></a></li>
+            <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Home</a></li>
+            <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> About us</a></li>
+              <li><a href="#"><i  aria-hidden="true"></i> Our Services</a></li>
+              <li><a href="#"><i  aria-hidden="true"></i> Contact Us</a></li>
+               <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i>Why Choose Intelli-Freight</a></li>
+
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> Login</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+<!--    Navbar ends here-->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 sidebar">
+                <ul class="nav nav-sidebar">
+                    <li class="active"><a href="#">Vessel Arrangement</a></li>
+                    <li><a href="#">Truck Parking Arrangement</a></li>
+                    <li><a href="#">Daily Report</a></li>
+                    <li><a href="#">Positioning of Containers</a></li>
+                    <li><a href="#">Bad Weather Arrangements</a></li>
+                    <li><a href="#">Accounts</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-9 col-md-10 main">
+                <h1 class="page-header pull-left"><i class="fa fa-line-chart" aria-hidden="true"></i> Analytics</h1>
+                <img class="pull-right" style="width: 120px; height: 120px;" src="{% static 'intelli_freight/images/Screenshot 2020-02-11 at 4.01.38 PM.png' %}" alt="">
+                <img src="{% static 'intelli_freight/images/MicrosoftTeams-image.png' %}"style="width: 800px; height: 500px; margin-left: 200px; margin-top: 60px; margin-bottom: 60px;" class="card-img-top" alt="...">
+                <hr class="divider">
+                <img src="{% static 'intelli_freight/images/MicrosoftTeams-image (1).png' %}"style="width: 800px; height: 500px; margin-left: 200px; margin-top: 100px;" class="card-img-top" alt="...">
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="pull-right"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Move to Top</p>
+        <p>&copy; Intelli Freight, 2020</p>
+    </footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<script>
+	</script>
+
+</body>
+
+</html>
